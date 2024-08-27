@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="../Setup/js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div id="uniqueElement"> Content </div>
+    <div class="box">Content 1 </div>
+    <div class="box">Content 2 </div>
+
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+
+    <form action="">
+        <input type="text" placeholder="Enter Text">
+        <input type="password" placeholder="Enter password">
+        <input type="text" name="username">
+        <input type="text" name="email">
+    </form>
+
+    <a href="http://example.com">Example</a>
+    <a href="http://example.org">Example Org</a>
+    <a href="https://google.com">Example google</a>
+
+    <div class="container">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+
+    </div>
+
+    <script>
+        //id selector
+        $('#uniqueElement').text('New Content 1');
+
+        //class selector
+        // $('.box').text('New content 2');
+        $('.box').css('background-color', 'yellow');
+
+
+        // //element selector
+        // $('p').hide();
+
+        //attribute selector
+        $('[placeholder]').css('border', '2px solid red');
+
+        //value selector
+        $('[name="username"]').val('Default username');
+
+        //partial value selector
+        $('a[href^="https://google"]').css('color', 'green');
+    </script>
+
+
+
+</body>
+
+</html>

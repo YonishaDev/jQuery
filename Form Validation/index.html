@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="
+https://cdn.jsdelivr.net/npm/jquery-confirm@3.3.4/dist/jquery-confirm.min.css
+" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container w-50">
+        <div class="card m-5">
+            <div class="card-header">
+                <h3 class="text-center" >
+                    User registration Form
+                </h3>
+            </div>
+            <div class="card-body">
+                <!-- <form id="frm"> -->
+                <div class="form-group">
+                    <label class="fw-bold">Name</label>
+                </div>
+                <div class="form-group">
+                    <span><input type="text" class="form-control" name="name" id="fname"
+                            placeholder="Enter Full Name"></span>
+                    <p class="colorError">
+                        <span id="error-data-first">This field is required</span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="fw-bold">DOB</label>
+                </div>
+                <div class="form-group">
+                    <span> <input type="text" class="form-control" name="dob" id="dob" placeholder="YYYY-MM-DD">
+                    </span>
+                    <p class="colorError">
+                        <span id="error-data-dob">This field is required</span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="fw-bold">Email</label>
+                </div>
+                <div class="form-group">
+                    <span> <input type="email" class="form-control" name="email" id="email"
+                            placeholder="something@som.com">
+                    </span>
+                    <p class="colorError">
+                        <span id="invalid-error">Inavlid Email This field is required</span>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label class="fw-bold">Password</label>
+                </div>
+                <div class="form-group">
+                    <span> <input type="password" class="form-control" name="passWord" id="pass"
+                            placeholder="Enter Password">
+
+                    </span>
+                    <p class="colorError">
+                        <span id="error-data-password">This field is required</span>
+                    </p>
+                </div>
+                <!-- <div id="message">
+                    <h5>Password mudt contain the following</h5>
+                    <p id="letter" class="invalid"> A <b>Lowercase</b> letter</p>
+                    <p id="capital" class="invalid"> A <b>capital (uppercase)</b> letter</p>
+                    <p id="special" class="invalid"> A <b>special</b> letter</p>
+                    <p id="length" class="invalid"> Minimum <b>8 characters</b> letter</p>
+
+                </div> -->
+                <div class="form-group">
+                    <label class="fw-bold">Confirm Password</label>
+
+                </div>
+                <div class="form-group">
+                    <span> <input type="password" class="form-control" name="confirmPassword" id="cpass"
+                            placeholder="Enter Confirm Password">
+                    </span>
+                    <p class="colorError">
+                        <span id="error-data-confirm">Password dont match This field Required</span>
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label class="fw-bold">Contact No</label>
+                </div>
+                <div class="form-group">
+                    <span> <input type="tel" class="form-control" name="mobile" id="mobile"
+                            placeholder="Enter Mobile Number">
+
+                    </span>
+                    <p class="colorError">
+                        <span id="error-data-mobile">This field is required</span>
+                    </p>
+                </div>
+                <button class="btn btn-primary my-2" id="btn">Register Now</button>
+                <!-- </form> -->
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/jquery-confirm@3.3.4/dist/jquery-confirm.min.js
+    "></script>
+    <script src="script.js">
+
+    </script>
+    <style>
+        .colorError {
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
